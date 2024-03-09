@@ -1,0 +1,15 @@
+E:\VS\CodeWithSenko\CodeWithSenko\bin\Debug\net8.0\CodeWithSenko.exe
+E:\VS\CodeWithSenko\CodeWithSenko\bin\Debug\net8.0\CodeWithSenko.deps.json
+E:\VS\CodeWithSenko\CodeWithSenko\bin\Debug\net8.0\CodeWithSenko.runtimeconfig.json
+E:\VS\CodeWithSenko\CodeWithSenko\bin\Debug\net8.0\CodeWithSenko.dll
+E:\VS\CodeWithSenko\CodeWithSenko\bin\Debug\net8.0\CodeWithSenko.pdb
+E:\VS\CodeWithSenko\CodeWithSenko\obj\Debug\net8.0\CodeWithSenko.GeneratedMSBuildEditorConfig.editorconfig
+E:\VS\CodeWithSenko\CodeWithSenko\obj\Debug\net8.0\CodeWithSenko.AssemblyInfoInputs.cache
+E:\VS\CodeWithSenko\CodeWithSenko\obj\Debug\net8.0\CodeWithSenko.AssemblyInfo.cs
+E:\VS\CodeWithSenko\CodeWithSenko\obj\Debug\net8.0\CodeWithSenko.csproj.CoreCompileInputs.cache
+E:\VS\CodeWithSenko\CodeWithSenko\obj\Debug\net8.0\CodeWithSenko.sourcelink.json
+E:\VS\CodeWithSenko\CodeWithSenko\obj\Debug\net8.0\CodeWithSenko.dll
+E:\VS\CodeWithSenko\CodeWithSenko\obj\Debug\net8.0\refint\CodeWithSenko.dll
+E:\VS\CodeWithSenko\CodeWithSenko\obj\Debug\net8.0\CodeWithSenko.pdb
+E:\VS\CodeWithSenko\CodeWithSenko\obj\Debug\net8.0\CodeWithSenko.genruntimeconfig.cache
+E:\VS\CodeWithSenko\CodeWithSenko\obj\Debug\net8.0\ref\CodeWithSenko.dll
