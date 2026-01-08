@@ -12,3 +12,4 @@
 /home/hur/VSCode/CS/CodeWithSenko/obj/Debug/net10.0/CodeWithSenko.pdb
 /home/hur/VSCode/CS/CodeWithSenko/obj/Debug/net10.0/CodeWithSenko.genruntimeconfig.cache
 /home/hur/VSCode/CS/CodeWithSenko/obj/Debug/net10.0/ref/CodeWithSenko.dll
+/home/hur/VSCode/CS/CodeWithSenko/obj/Debug/net10.0/CodeWithSenko.sourcelink.json

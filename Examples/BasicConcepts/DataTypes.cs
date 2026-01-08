@@ -27,7 +27,7 @@ public partial class BasicConcepts
     ///         <description>Logical values: <see cref="bool"/>.</description>
     ///     </item>
     ///     <item>
-    ///         <description>Textual data: <see cref="char"/> and <see cref="string"/>.</description>
+    ///         <description>Textual data: <see cref="char"/>.</description>
     ///     </item>
     /// </list>
     /// </summary>
@@ -52,7 +52,9 @@ public partial class BasicConcepts
         // This can be done as follows:
         int y;
 
-        // In the previous example, we are generating a variable that points to a space in memory that is currently empty and has no value, also known as null
+        // In the previous example, we are generating a variable that points to a space in memory that is currently empty and has no value
+        // The variable is declared but not initialized.
+        // It does not contain a usable value yet.
         // For assign a value we need to use the assignation operator "="
         y = 10;
 
@@ -129,7 +131,7 @@ public partial class BasicConcepts
         // C# allows us to use “_” when writing numbers, which helps make them more readable for both us and other developers.
         // Let's try it with the previous example.
 
-        urMomWeight = 18_446_744_073_709_551_515;
+        urMomWeight = 18_446_744_073_709_551_615;
 
         // As you can see, C# does not give any error when doing this
 
@@ -148,9 +150,9 @@ public partial class BasicConcepts
         // Floats are numbers that have an approximate precision of 6 to 9 decimal places.
         // But what do you mean by “approximately”?
 
-        // Well, when we say that float or decimal numbers have an approximate precision of x digits, it is because when these numbers are saved, they are converted to binary using some unusual algorithms.
+        // when we say that float or double numbers have an approximate precision, it is because when these numbers are saved, they are converted to binary using some unusual algorithms.
         // Therefore, this precision can be lost in long numbers, with 6 digits (for floats) being the maximum number of digits that cannot be lost and 9 digits (also for floats) being the maximum number of digits needed to correctly differentiate between two different floats.
-        // Floats have an approximate range of ±1.5×10^45 to ±3.4×10^38.
+        // Floats have an approximate range of ±1.5×10^-45 to ±3.4×10^38.
 
         // Getting back to the main point, to declare a float we must use the reserved word “float” and also add an “f” at the end.
 
@@ -159,6 +161,116 @@ public partial class BasicConcepts
         // But...
         // Why we have to use the “f” at the end?
 
-        // 
+        // Well, this is because C# alone cannot differentiate between floats and doubles on its own, but what does this have to do with anything?
+        // Well, a float is a 32-bit number, while a double is a 64-bit number.
+        // When you try to save any decimal number, C# will take it as a double by default, in other words as a 64-bit number, so when you try to save a 64-bit number in a 32-bit space, it will throw a compilation error.
+        // To avoid this, the character “f” is used at the end of the number to tell C# that the number we are giving it is actually a float and not a double.
+
+        // Try hovering your mouse over the variable names, and your IDE will tell you what type each one is. 
+        var decimalNumber = 15.0f;
+        var decimalNumber2 = 15.0;
+
+        /* Doubles */
+        // Doubles are similar to floats, but with the difference that they are 64-bit numbers and also have greater precision than floats.
+        // Unlike floats, doubles have a precision of 15 to 16 digits.
+        // For this reason, its numerical range is approximately ±5.0×10^-324 to ±1.7×10^308
+
+        // To declare these, we use the reserved word double and assign the value in the normal way.
+        double PIPI = 3.14159265359;
+
+        /* Decimals */
+        // Unlike their two siblings, decimals are extremely precise numbers.
+        // This is because, unlike the others, they store their numbers in base 10, while floats and doubles use binary.
+        // This difference can give decimals much greater precision, from 28 to 29 digits.
+        // But this comes at a cost.
+        // Decimals are the heaviest numeric data type of all, because they are 128-bit numbers, and it is better to use them for very specific cases in which very good precision is required.
+        // Decimals have a numerical range of approximately ±1.0×10^-28 to ±7.9×10^28.
+
+        // To declare these numbers, you must use the reserved word “decimal” and use ‘M’ at the end of the number so that C# does not treat it as a double.
+
+        decimal earthMassInKg = 5972000000000000000000000m;
+
+        /* Scientific connotation */
+        // Float, double, and decimal literals support scientific notation
+        // For example, if we wanted to represent the largest number that each one can store, we could do the following:
+        float biggestFloatNumber = 3.4e38f; // == 3.4×10^38
+        double biggestDoubleNumber = 1.7e308; // == 1.7×10^308
+        decimal biggestDecimalNumber = 7.8e28m; // == 7.9×10^28
+
+        /************/
+        /* Booleans */
+        /************/
+
+        // What are Booleans?
+        // Boolean values are those types that can only have two possible values, true or false.
+        // These are the most primitive type of value of all, as they only represent a 1 or a 0, with 1 being true and 0 being false.
+        // In addition to being the lightest of all, using only 1 byte in memory.
+
+        // To declare these values, you must use the reserved word bool and assign it one of the possible values “true” or “false.”
+        bool isHL3ComingOutThisYear = false;
+        bool isCodeWithSenkoTheBestAccount = true;
+
+        // But when will we want to use these values?
+        // Well, booleans are used almost everywhere, if not everywhere.
+        // They are often used to declare flags in some structures, such as whether a person has a job or not.
+
+        /* Senko data */
+        short senkoAge = 800;
+        bool senkoHasTail = true;
+
+        // In the previous example, the variable “senkoHasTail” allows us to verify that Senko does indeed have a tail.
+
+        // But Booleans are not limited to that.
+        // They are also widely used in program flow control.
+        // For example, when we use logical operators, they return Booleans.
+        // Example:
+
+        // Write your age here
+        short yourAge = 0;
+
+        // Depending on the value of “yourAge,” the conditional will return a different value. Try it yourself.
+        Console.WriteLine(senkoAge > yourAge);
+
+        /*---------*/
+        /*  Chars  */
+        /*---------*/
+
+        // What is a char?
+        // Char variables are responsible for storing only one character within them. 
+        // Unlike their older sibling (Strings), chars must be declared with single quotation marks (for example: ‘S’).
+        // To declare these variables, we must use the reserved word “char.”
+
+        char senkoInitial = 'S';
+
+        // But what happens if I use double quotation marks?
+        // This will cause a compilation error because, unlike other languages such as Python or JS, in C# quotation marks are used to differentiate and declare types.
+        // In this case, the types are String and char.
+        // char senkoInitial = "S";
+
+        // C# characters, as simple as they may seem, are not so simple, because without them, strings would not exist.
+        // But what sets them apart from other languages?
+        // C# characters weigh 2 bytes in memory and store Unicode characters, due to Unicode's greater capacity than ASCII to represent special characters.
+
+        // You may be wondering, “Why would I want to save only one character?”
+
+        // Imagine you have a console application that at some point asks the user a question that the user can only answer with yes or no.
+        // Is it really worth saving the entire “Yes” or “No” text to know what the user's response was?
+        // The truth is, no, for several reasons.
+        // Two of these are memory and comparison.
+
+        // For example, the character ‘Y’ takes up much less memory than the text “Yes,” but also, the simple fact that it is a char type saves even more memory, because Strings are a heavier data type, which we will look at in depth later on.
+
+        // Furthermore, comparing them is more tedious, 
+        // since strings are more complex types and require their own methods to compare two of them, one of which is String.Equals, unlike chars, which can be compared using only the comparison operator “==”,
+        // this is because a char is basically a 16-bit number, so C# can compare it as if it were two numbers.
+
+        // For example, we can add numbers to chars.
+        // This will print 66
+        Console.WriteLine('A' + 1);
+        // But what if we turn it into char?
+        // Run the program and see what it returns.
+        Console.WriteLine((char)('A' + 1));
+
+        // The Strings will be in a specific module for them.
     }
 }

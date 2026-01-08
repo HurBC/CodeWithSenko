@@ -20,5 +20,6 @@ public partial class BasicConcepts : Example
     {
         PrintInConsole();
         DataTypes();
+        Strings();
     }
 }

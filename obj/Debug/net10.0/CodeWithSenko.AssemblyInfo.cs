@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CodeWithSenko")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+caf74a3bf633cd5124c6297b1e8d7b6a962cbb23")]
 [assembly: System.Reflection.AssemblyProductAttribute("CodeWithSenko")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CodeWithSenko")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

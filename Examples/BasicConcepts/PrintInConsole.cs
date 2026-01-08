@@ -54,5 +54,6 @@ public partial class BasicConcepts
         Console.Write(3);
         Console.Write(4);
         Console.Write(5);
+        Console.Write('\n');
     }
 }
