@@ -1,0 +1,14 @@
+/home/hur/VSCode/CS/CodeWithSenko/bin/Debug/net10.0/CodeWithSenko
+/home/hur/VSCode/CS/CodeWithSenko/bin/Debug/net10.0/CodeWithSenko.deps.json
+/home/hur/VSCode/CS/CodeWithSenko/bin/Debug/net10.0/CodeWithSenko.runtimeconfig.json
+/home/hur/VSCode/CS/CodeWithSenko/bin/Debug/net10.0/CodeWithSenko.dll
+/home/hur/VSCode/CS/CodeWithSenko/bin/Debug/net10.0/CodeWithSenko.pdb
+/home/hur/VSCode/CS/CodeWithSenko/obj/Debug/net10.0/CodeWithSenko.GeneratedMSBuildEditorConfig.editorconfig
+/home/hur/VSCode/CS/CodeWithSenko/obj/Debug/net10.0/CodeWithSenko.AssemblyInfoInputs.cache
+/home/hur/VSCode/CS/CodeWithSenko/obj/Debug/net10.0/CodeWithSenko.AssemblyInfo.cs
+/home/hur/VSCode/CS/CodeWithSenko/obj/Debug/net10.0/CodeWithSenko.csproj.CoreCompileInputs.cache
+/home/hur/VSCode/CS/CodeWithSenko/obj/Debug/net10.0/CodeWithSenko.dll
+/home/hur/VSCode/CS/CodeWithSenko/obj/Debug/net10.0/refint/CodeWithSenko.dll
+/home/hur/VSCode/CS/CodeWithSenko/obj/Debug/net10.0/CodeWithSenko.pdb
+/home/hur/VSCode/CS/CodeWithSenko/obj/Debug/net10.0/CodeWithSenko.genruntimeconfig.cache
+/home/hur/VSCode/CS/CodeWithSenko/obj/Debug/net10.0/ref/CodeWithSenko.dll
