@@ -1,25 +1,25 @@
 using System;
 
-namespace CodeWithSenko.Examples.BasicConcepts;
+namespace CodeWithSenko.Module.BasicConcepts;
 
-public partial class BasicConcepts
+/// <summary>
+/// This class contains a more detailed version of the post “Print in console” uploaded on September 16, 2023.
+/// <list type="bullet">
+///     <listheader>
+///         <term>Content</term>
+///         <description>Topics covered in this post:</description>
+///     </listheader>
+///     <item>
+///         <description>Method <see cref="Console.WriteLine()"/></description>
+///     </item>
+///     <item>
+///         <description>Method <see cref="Console.Write()"/></description>
+///     </item>
+/// </list>
+/// </summary>
+public class PrintInConsole : Module
 {
-    /// <summary>
-    /// This method contains a more detailed version of the post “Print in console” uploaded on September 16, 2023.
-    /// <list type="bullet">
-    ///     <listheader>
-    ///         <term>Content</term>
-    ///         <description>Topics covered in this post:</description>
-    ///     </listheader>
-    ///     <item>
-    ///         <description>Method <see cref="Console.WriteLine()"/></description>
-    ///     </item>
-    ///     <item>
-    ///         <description>Method <see cref="Console.Write()"/></description>
-    ///     </item>
-    /// </list>
-    /// </summary>
-    private void PrintInConsole()
+    protected override void ModuleBody()
     {
         /*
             In C#, to write to the console, we use the Console class, which is included in the System namespace.
@@ -55,5 +55,27 @@ public partial class BasicConcepts
         Console.Write(4);
         Console.Write(5);
         Console.Write('\n');
+    }
+
+    /// <summary>
+    /// This class contains a more detailed version of the post “Print in console” uploaded on September 16, 2023.
+    /// <list type="bullet">
+    ///     <listheader>
+    ///         <term>Content</term>
+    ///         <description>Topics covered in this post:</description>
+    ///     </listheader>
+    ///     <item>
+    ///         <description>Method <see cref="Console.WriteLine()"/></description>
+    ///     </item>
+    ///     <item>
+    ///         <description>Method <see cref="Console.Write()"/></description>
+    ///     </item>
+    /// </list>
+    /// </summary>
+    public PrintInConsole()
+    {
+        ModuleName("Print In Console");
+        IsSubModule(true);
+        Execute();
     }
 }

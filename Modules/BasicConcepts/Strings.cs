@@ -1,36 +1,36 @@
 using System;
 
-namespace CodeWithSenko.Examples.BasicConcepts;
+namespace CodeWithSenko.Module.BasicConcepts;
 
-public partial class BasicConcepts
+/// <summary>
+/// This method contains a more detailed version of the posts:
+/// <list type="table">
+///     <item>
+///         <term>Data Types</term>
+///         <description>September 16, 2023</description>
+///     </item>
+///     <item>
+///         <term>The Truth Behind Strings</term>
+///         <description>November 13, 2023</description>
+///     </item>
+///     <item>
+///         <term>Strings 2</term>
+///         <description>November 15, 2023</description>
+///     </item>
+/// </list>
+/// </summary>
+/// <remarks>
+/// <strong>Topics covered:</strong>
+/// <list type="bullet">
+///     <item><description>Definition and nature of Strings.</description></item>
+///     <item><description>Attributes and Methods.</description></item>
+///     <item><description>Concatenation and Interpolation techniques.</description></item>
+///     <item><description>Formatting and Composite Formatting.</description></item>
+/// </list>
+/// </remarks>
+public class Strings : Module
 {
-    /// <summary>
-    /// This method contains a more detailed version of the posts:
-    /// <list type="table">
-    ///     <item>
-    ///         <term>Data Types</term>
-    ///         <description>September 16, 2023</description>
-    ///     </item>
-    ///     <item>
-    ///         <term>The Truth Behind Strings</term>
-    ///         <description>November 13, 2023</description>
-    ///     </item>
-    ///     <item>
-    ///         <term>Strings 2</term>
-    ///         <description>November 15, 2023</description>
-    ///     </item>
-    /// </list>
-    /// </summary>
-    /// <remarks>
-    /// <strong>Topics covered:</strong>
-    /// <list type="bullet">
-    ///     <item><description>Definition and nature of Strings.</description></item>
-    ///     <item><description>Attributes and Methods.</description></item>
-    ///     <item><description>Concatenation and Interpolation techniques.</description></item>
-    ///     <item><description>Formatting and Composite Formatting.</description></item>
-    /// </list>
-    /// </remarks>
-    private void Strings()
+    protected override void ModuleBody()
     {
         /*---------*/
         /* Strings */
@@ -150,7 +150,7 @@ public partial class BasicConcepts
         // Now, how could I search for the index of the second word “Senko” within the string in "CodeWithSenko"?
         // This time, I'll leave that task to you, dear reader.
         // Your code:
-        int indexOfEmployee003Name;
+        int indexOfEmployee003Name = 0;
 
         /* SubString */
 
@@ -344,5 +344,42 @@ public partial class BasicConcepts
         Console.WriteLine(logbook);
         Console.WriteLine("END...");
 
+        _objects = [indexOfEmployee003Name, employeeLog2, employeesDir];
+
     }
+
+    /// <summary>
+    /// This method contains a more detailed version of the posts:
+    /// <list type="table">
+    ///     <item>
+    ///         <term>Data Types</term>
+    ///         <description>September 16, 2023</description>
+    ///     </item>
+    ///     <item>
+    ///         <term>The Truth Behind Strings</term>
+    ///         <description>November 13, 2023</description>
+    ///     </item>
+    ///     <item>
+    ///         <term>Strings 2</term>
+    ///         <description>November 15, 2023</description>
+    ///     </item>
+    /// </list>
+    /// </summary>
+    /// <remarks>
+    /// <strong>Topics covered:</strong>
+    /// <list type="bullet">
+    ///     <item><description>Definition and nature of Strings.</description></item>
+    ///     <item><description>Attributes and Methods.</description></item>
+    ///     <item><description>Concatenation and Interpolation techniques.</description></item>
+    ///     <item><description>Formatting and Composite Formatting.</description></item>
+    /// </list>
+    /// </remarks>
+    public Strings()
+    {
+        ModuleName("Strings");
+        IsSubModule(true);
+        Execute();
+    }
+
+    private object[] _objects = [];
 }

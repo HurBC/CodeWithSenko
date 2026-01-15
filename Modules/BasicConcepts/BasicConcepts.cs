@@ -1,6 +1,6 @@
 using System;
 
-namespace CodeWithSenko.Examples.BasicConcepts;
+namespace CodeWithSenko.Module.BasicConcepts;
 
 /// <summary>
 /// Contains the content of the first CodeWithSenko posts, covering the following topics:
@@ -14,12 +14,19 @@ namespace CodeWithSenko.Examples.BasicConcepts;
 ///     <item><description>Methods (Part 1 &amp; Part 2)</description></item>
 /// </list>
 /// </summary>
-public partial class BasicConcepts : Example
+public partial class BasicConcepts : Module
 {
-    public override void CreateExample()
+    protected override void ModuleBody()
     {
-        PrintInConsole();
-        DataTypes();
-        Strings();
+        new PrintInConsole();
+        new DataTypes();
+        new Strings();
+        new Operators();
+    }
+
+    public BasicConcepts()
+    {
+        ModuleName("Basic Concepts");
+        Execute();
     }
 }

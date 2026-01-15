@@ -1,37 +1,37 @@
 using System;
 
-namespace CodeWithSenko.Examples.BasicConcepts;
+namespace CodeWithSenko.Module.BasicConcepts;
 
-public partial class BasicConcepts
+/// <summary>
+/// This method contains a more detailed version of the post “Data Types” uploaded on September 16, 2023.
+/// <list type="bullet">
+///     <listheader>
+///         <term>Content</term>
+///         <description>Topics covered in this post:</description>
+///     </listheader>
+///     <item>
+///         <description>Variable declaration and initialization.</description>
+///     </item>
+///     <item>
+///         <description>Whole numbers: <see cref="int"/>, <see cref="long"/>, etc.</description>
+///     </item>
+///     <item>
+///         <description>Floating-point numbers: <see cref="float"/> and <see cref="double"/>.</description>
+///     </item>
+///     <item>
+///         <description>High-precision values: <see cref="decimal"/>.</description>
+///     </item>
+///     <item>
+///         <description>Logical values: <see cref="bool"/>.</description>
+///     </item>
+///     <item>
+///         <description>Textual data: <see cref="char"/>.</description>
+///     </item>
+/// </list>
+/// </summary>
+public class DataTypes : Module
 {
-    /// <summary>
-    /// This method contains a more detailed version of the post “Data Types” uploaded on September 16, 2023.
-    /// <list type="bullet">
-    ///     <listheader>
-    ///         <term>Content</term>
-    ///         <description>Topics covered in this post:</description>
-    ///     </listheader>
-    ///     <item>
-    ///         <description>Variable declaration and initialization.</description>
-    ///     </item>
-    ///     <item>
-    ///         <description>Whole numbers: <see cref="int"/>, <see cref="long"/>, etc.</description>
-    ///     </item>
-    ///     <item>
-    ///         <description>Floating-point numbers: <see cref="float"/> and <see cref="double"/>.</description>
-    ///     </item>
-    ///     <item>
-    ///         <description>High-precision values: <see cref="decimal"/>.</description>
-    ///     </item>
-    ///     <item>
-    ///         <description>Logical values: <see cref="bool"/>.</description>
-    ///     </item>
-    ///     <item>
-    ///         <description>Textual data: <see cref="char"/>.</description>
-    ///     </item>
-    /// </list>
-    /// </summary>
-    private void DataTypes()
+    protected override void ModuleBody()
     {
         /*************/
         /* Variables */
@@ -272,5 +272,69 @@ public partial class BasicConcepts
         Console.WriteLine((char)('A' + 1));
 
         // The Strings will be in a specific module for them.
+
+
+        // Avoid warnings
+        _objects = [
+            x,
+            y,
+            z,
+            age,
+            temperature,
+            auraOfCSharpDevs,
+            auraOfPythonDevs,
+            distanceFromEarthToTheMoon,
+            sunDiameter,
+            ageOfTheEarth,
+            urMomWeight,
+            wideOfSenkoBread,
+            decimalNumber,
+            decimalNumber2,
+            PIPI,
+            earthMassInKg,
+            biggestFloatNumber,
+            biggestDoubleNumber,
+            biggestDecimalNumber,
+            isHL3ComingOutThisYear,
+            isCodeWithSenkoTheBestAccount,
+            senkoHasTail,
+            senkoInitial,
+        ];
     }
+
+    /// <summary>
+    /// This method contains a more detailed version of the post “Data Types” uploaded on September 16, 2023.
+    /// <list type="bullet">
+    ///     <listheader>
+    ///         <term>Content</term>
+    ///         <description>Topics covered in this post:</description>
+    ///     </listheader>
+    ///     <item>
+    ///         <description>Variable declaration and initialization.</description>
+    ///     </item>
+    ///     <item>
+    ///         <description>Whole numbers: <see cref="int"/>, <see cref="long"/>, etc.</description>
+    ///     </item>
+    ///     <item>
+    ///         <description>Floating-point numbers: <see cref="float"/> and <see cref="double"/>.</description>
+    ///     </item>
+    ///     <item>
+    ///         <description>High-precision values: <see cref="decimal"/>.</description>
+    ///     </item>
+    ///     <item>
+    ///         <description>Logical values: <see cref="bool"/>.</description>
+    ///     </item>
+    ///     <item>
+    ///         <description>Textual data: <see cref="char"/>.</description>
+    ///     </item>
+    /// </list>
+    /// </summary>
+    public DataTypes()
+    {
+        ModuleName("Data Types");
+        IsSubModule(true);
+        Execute();
+    }
+
+    private object[] _objects = [];
 }
