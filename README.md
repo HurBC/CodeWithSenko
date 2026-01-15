@@ -37,7 +37,7 @@ This is a resource for both beginners who want to build a strong foundation and 
         *   **Immutability**: Why modifying a string actually creates a new one.
         *   **Manipulation**: `IndexOf`, `Substring`, `Replace`, `ToUpper`/`ToLower`.
         *   **Composition**: Concatenation vs. Interpolation (`$""`) vs. Formatting.
-*   **Operators (The Crown Jewel)**
+*   **Operators**
     *   *Based on post: "Operators && Conditionals part 1" (Sep 19, 2023)*
     *   Our most comprehensive module to date. It goes far beyond simple math:
         *   **Arithmetic**: Standard operations plus the nuances of `++` and `--` prefix/postfix execution order.
